@@ -145,11 +145,11 @@ UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
         messagesCollectionView.dataSource = self
     }
 
-    open func setupSubviews() {
+    @objc open func setupSubviews() {
         view.addSubview(messagesCollectionView)
     }
 
-    open func setupConstraints() {
+    @objc open func setupConstraints() {
         messagesCollectionView.translatesAutoresizingMaskIntoConstraints = false
         
         let top = messagesCollectionView.topAnchor.constraint(equalTo: view.topAnchor, constant: topLayoutGuide.length)
